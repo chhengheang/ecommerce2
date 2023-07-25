@@ -2,7 +2,7 @@
   <section class="product">
     <div class="left">
       <div class="product_img">
-        <img src="../assets/images/see_more.png" alt="">
+        <img src="../assets/images/shirt.png" alt="">
       </div>
       <div class="h2">"PRODUCT NAME"</div>
     </div>
