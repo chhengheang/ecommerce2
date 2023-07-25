@@ -1,15 +1,17 @@
 <template>
     <header class="header">
-
+<router-link to="/">
 <a href="#" class="logo"><img src="../assets/images/WINDD.png"></a>
-
+</router-link>
 <div class="icons search_wrapper">
    <i class="fas fa-search"></i>
    <input class="search_bar" type="text" placeholder="Search for ..." />
 </div>
 
 <nav class="navbar">
-   <a href="#home">Home</a>
+  <router-link to="/"> 
+  <a href="#home">Home</a>
+</router-link>
    <a href="#about">About</a>
    <a href="#services">Services</a>
    <a href="#projects">
