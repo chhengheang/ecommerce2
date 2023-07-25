@@ -9,9 +9,9 @@
 </div>
 
 <nav class="navbar">
-   <a href="#home">home</a>
-   <a href="#about">about</a>
-   <a href="#services">services</a>
+   <a href="#home">Home</a>
+   <a href="#about">About</a>
+   <a href="#services">Services</a>
    <a href="#projects">
       <i class="fas fa-shopping-cart"></i>
       Cart <span>(0)</span>
