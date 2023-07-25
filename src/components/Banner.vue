@@ -7,11 +7,10 @@
 
       <section class="swiper-slide slide">
          <div class="content">
-            <h3>Hero title</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum
-               magnam eos! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium inventore
-               incidunt consectetur quaerat corrupti tempora, quam minus facilis laboriosam. Aliquam officia animi
-               quae vero rerum tempore vel, optio saepe quaerat.</p>
+            <h3>Shopping Essential</h3>
+            <p>Wind as a shopping platform where you can buy any next-Gen clothings from footwears to jackets.
+              All with authenticity and class.
+            </p>
             <a href="#about" class="btn">shop now</a>
             <a href="#about" class="btn">learn more</a>
          </div>
@@ -23,19 +22,19 @@
 <div class="box-container">
 
    <router-link to="/product" class="box">
-      <img src="../assets/images/see_more.png" alt="">
+      <img src="../assets/images/shirt.png" alt="">
    </router-link>
    <div class="box">
-      <img src="../assets/images/see_more.png" alt="">
+      <img src="../assets/images/shoes.png" alt="">
    </div>
    <div class="box">
-      <img src="../assets/images/see_more.png" alt="">
+      <img src="../assets/images/trousers.png" alt="">
    </div>
    <div class="box">
-      <img src="../assets/images/see_more.png" alt="">
+      <img src="../assets/images/jacket.png" alt="">
    </div>
    <div class="box">
-      <img src="../assets/images/see_more.png" alt="">
+      <img src="../assets/images/hawaiian-shirt.png" alt="">
    </div>
    <div class="box">
       <img src="../assets/images/see_more.png" alt="">
