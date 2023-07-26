@@ -2,6 +2,7 @@
   <div>
     <router-link to="/"></router-link>
     <router-link to="/product"></router-link>
+    <router-link to="/cart"></router-link>
   </div>
   <router-view/>
 </template>

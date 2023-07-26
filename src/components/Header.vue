@@ -14,10 +14,12 @@
 </router-link>
    <a href="#about">About</a>
    <a href="#services">Services</a>
+   <router-link to="/cart">
    <a href="#projects">
       <i class="fas fa-shopping-cart"></i>
       Cart <span>(0)</span>
    </a>
+  </router-link>
    <a class="btnn sign_up" href="#pricing">Sign Up</a>
    <a class="btnn login" href="#contact">Login</a>
 </nav>
