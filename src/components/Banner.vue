@@ -14,34 +14,24 @@
             <a href="#about" class="btn">shop now</a>
             <a href="#about" class="btn">learn more</a>
          </div>
+         <div class="artwork">
+            <img src="../assets/images/1.avif" alt="">
+         </div>
       </section>
+      
 
    </div>
-   <section class="services" id="services">
+<section class="services" id="services">
 
-<div class="box-container">
+  <div class="box-container" >
 
-   <router-link to="/product" class="box">
-      <img src="../assets/images/shirt.png" alt="">
-   </router-link>
-   <div class="box">
-      <img src="../assets/images/shoes.png" alt="">
-   </div>
-   <div class="box">
-      <img src="../assets/images/trousers.png" alt="">
-   </div>
-   <div class="box">
-      <img src="../assets/images/jacket.png" alt="">
-   </div>
-   <div class="box">
-      <img src="../assets/images/hawaiian-shirt.png" alt="">
-   </div>
-   <div class="box">
-      <img src="../assets/images/see_more.png" alt="">
-   </div>
+    <div class="box" v-for="p in products" :key="p.id">
+      <router-link :to="{ name: 'productView', params:{ id: p.id, img: p.imgLink }} " >
+        <img :src="p.imgLink" v-bind:alt="p.id">
+      </router-link>
+    </div>
 
-
-</div>
+  </div>
 
 </section>
 
@@ -51,6 +41,29 @@
 </template>
 <script setup>
 import { routerViewLocationKey } from 'vue-router';
+
+import img1 from "../assets/images/shirt.png";
+import img2 from "../assets/images/shoes.png";
+import img3 from "../assets/images/trousers.png";
+import img4 from "../assets/images/jacket.png";
+import img5 from "../assets/images/hawaiian-shirt.png";
+import img6 from "../assets/images/see_more.png";
+
+    const products = [
+      {
+        imgLink: img1, id: "SHIRT: $95.00"
+      },{
+        imgLink: img2, id: "SHOE: $699.00"
+      },{
+        imgLink: img3, id: "TROUSER: $25.25"
+      },{
+        imgLink: img4, id: "JACKET: $79.50"
+      },{
+        imgLink: img5, id: "HAWAIIAN SHIRT: $50.00"
+      },{
+        imgLink: img6, id: "SEE MORE"
+      }
+    ]
 
 
 </script>
@@ -125,7 +138,7 @@ import { routerViewLocationKey } from 'vue-router';
 }
 
 .home .slide {
-    background: url("../assets/images/1.avif") no-repeat;
+  background-color: rgb(121, 47, 121);
   min-height: 60rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,14 +174,14 @@ import { routerViewLocationKey } from 'vue-router';
 }
 
 .home .slide .content h3 {
-  font-size: 6rem;
+  font-size: 10rem;
   color: var(--black);
   text-transform: capitalize;
   text-transform: uppercase;
 }
 
 .home .slide .content p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: var(--light-color);
   line-height: 2;
   padding: 1rem 0;
@@ -200,5 +213,15 @@ import { routerViewLocationKey } from 'vue-router';
 .home .swiper-button-prev {
   right: 7rem;
 }
-
+.home .slide .artwork{
+  border: 10px solid #000;
+  display: flex;
+  width: 400px;
+  align-items: flex-end;
+  position: relative;
+  margin-left: 300px;
+}
+.home .slide .artwork img{
+  width: 700px;
+}
 </style>

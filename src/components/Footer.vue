@@ -14,7 +14,6 @@
          <div>
             <img src="../assets/images/apple.png" alt="">
             <img src="../assets/images/android-logo.png" alt="">
-
          </div>
       </div>
       <div class="btn-footer">Subscribe</div>
@@ -23,12 +22,14 @@
 <style scoped>
 .footer {
          background: white;
+         margin: 0 10%;
          margin-top: 3rem;
          margin-bottom: 3rem;
-         padding: 0 10%;
+         padding: 10px;
          display: flex;
          align-items: center;
          justify-content: space-between;
+         border: 1px solid #000;
 
       }
 

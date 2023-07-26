@@ -15,6 +15,11 @@ const router = createRouter({
       name: "product",
       component: ProductView,
     },
+    {
+      path: "/product/:id/:img",
+      name: "productView",
+      component: ProductView,
+    },
   ],
 });
 

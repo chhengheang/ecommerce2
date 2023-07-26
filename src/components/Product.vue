@@ -2,9 +2,9 @@
   <section class="product">
     <div class="left">
       <div class="product_img">
-        <img src="../assets/images/shirt.png" alt="">
+        <img :src="this.$route.params.img" alt="">
       </div>
-      <div class="h2">"PRODUCT NAME"</div>
+      <div class="h2">"{{ this.$route.params.id}}"</div>
     </div>
     <div class="right">
       <div class="top">
@@ -30,10 +30,10 @@
         <p>Product you might like!</p>
         <div class="p_img">
           <div class="img">
-            <img src="../assets/images/see_more.png" alt="">
+            <img src="../assets/images/tie.png" alt="">
           </div>
           <div class="img">
-            <img src="../assets/images/see_more.png" alt="">
+            <img src="../assets/images/socks.png" alt="">
           </div>
           <button>
             <img src="../assets/images/see_more.png" alt="">
@@ -43,12 +43,19 @@
     </div>
   </section>
 </template>
+<script setup>
+
+//const productImage = this.$route.param.imgLink;
+//const productName = this.$route.param.name;
+
+</script>
 <style scoped>
 .product {
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
       gap: 2rem;
+      height: 80dvh;
     }
 
     .left,
@@ -67,7 +74,7 @@
     .left .h2 {
       font-style: italic;
       font-weight: 900;
-      font-size: 3rem;
+      font-size: 4rem;
     }
 
     .right {
@@ -104,6 +111,7 @@
       border: 1px solid #000;
       font-size: 17px;
       margin-bottom: 1rem;
+      cursor: pointer;
     }
 
     .right .top .bot {
@@ -132,10 +140,16 @@
       gap: 1.5rem;
     }
 
-    .bottom .p_img img {
+    .bottom .p_img .img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 75px;
       border: 1px solid #000;
       background: rgba(150, 135, 135, .5);
-      width: 250px;
+    }
+    .bottom .p_img img {
+     width: 100px;
     }
 
     .bottom .p_img button {

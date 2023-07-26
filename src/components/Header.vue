@@ -33,7 +33,7 @@
 <style scoped>
 .search_wrapper {
       padding-left: 10px;
-      width: 230px;
+      width: 300px;
       display: flex;
       align-items: center;
       border: 1px solid #000;
@@ -123,7 +123,7 @@
 }
 
 .header .navbar a:hover {
-  color: var(--yellow);
+  color: grey;
 }
 
 .header .icons div {
