@@ -8,7 +8,7 @@
       <section class="swiper-slide slide">
          <div class="content">
             <h3>Shopping Essential</h3>
-            <p>Wind as a shopping platform where you can buy any next-Gen clothings from footwears to jackets.
+            <p>WINDD, a shopping platform where you can buy clothings, from footwears to jackets. Anything exists Here
               All with authenticity and class.
             </p>
             <a href="#about" class="btn">shop now</a>
@@ -125,7 +125,7 @@ import { routerViewLocationKey } from 'vue-router';
 }
 
 .home .slide {
-    background: url("../assets/images/hero.jpg") no-repeat;
+    background: url("../assets/images/1.avif") no-repeat;
   min-height: 60rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,7 +152,7 @@ import { routerViewLocationKey } from 'vue-router';
     from(var(--white)),
     to(transparent)
   );
-  background: linear-gradient(90deg, var(--white), transparent);
+  background: linear-gradient(90deg,var(--white), transparent);
 }
 
 .home .slide .content {
