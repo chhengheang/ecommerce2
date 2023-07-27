@@ -12,7 +12,7 @@
       <div class="item-table">
         <div class="product">
           <div class="img">
-            <img src="./images/pic-1.png" alt="">
+            <img src="../assets/images/jacket.png" alt="">
           </div>
           <div class="inner-text">
             <div class="title">Item name</div>
@@ -42,7 +42,9 @@
           <p>$60.00</p>
         </div>
       </div>
+      <router-link to="/checkout">
       <button>Checkout</button>
+    </router-link>
     </div>
   </section>
 </template>
@@ -52,6 +54,7 @@
       align-items: flex-start;
       justify-content: flex-start;
       gap: 2rem;
+      height: 80dvh;
     }
 
     .left {
@@ -64,7 +67,7 @@
     }
 
     .left h2 {
-      font-size: 4rem;
+      font-size: 6rem;
       font-weight: bold;
       font-style: italic;
     }
@@ -98,7 +101,7 @@
       align-items: center;
       justify-content: center;
       padding: 20px;
-      background: red;
+      background:rgba(150, 135, 135, .5);;
     }
 
     .left .item-table .product .img img {
@@ -114,7 +117,7 @@
 
     .right .summary {
       padding: 10px;
-      background: blue;
+      background: rgba(150, 135, 135, .5);;
       display: flex;
       flex-direction: column;
       gap: .5rem;
@@ -145,6 +148,7 @@
     }
 
     .right button {
+      width: 100%;
       padding: 10px 20px;
       cursor: pointer;
       background-color: green;

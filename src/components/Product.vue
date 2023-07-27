@@ -21,7 +21,7 @@
           <p>Quantity:</p>
           <input type="number">
         </div>
-        <button class="add_cart">Add To Cart</button>
+        <RouterLink to="/cart"><button class="add_cart">Add To Cart</button></RouterLink>
         <div class="bot">
           <button>Sizing Chart</button>
         </div>

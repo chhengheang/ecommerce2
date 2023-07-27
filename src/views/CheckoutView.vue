@@ -1,13 +1,14 @@
 <template>
     <div> 
      <Header/>
-     <Cart/>
+     <Checkout/>
      <Footer/>
      
     </div>
    </template>
    <script setup>
-     import Cart from "../components/Cart.vue";
+     import Checkout from "../components/Checkout.vue";
      import Header from "../components/Header.vue";
      import Footer from "../components/Footer.vue";''
    </script>
+   
