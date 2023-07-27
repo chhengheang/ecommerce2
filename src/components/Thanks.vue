@@ -54,6 +54,8 @@
           <p>$60.00</p>
         </div>
       </div>
+      <RouterLink to="/receipt"><button> View your receipt</button></RouterLink>
+        
     </div>
    </section>
   </template>
@@ -130,5 +132,12 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+    }
+    .right button{
+      width: 100%;
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: green;
+      font-size: 15px;
     }
   </style>
