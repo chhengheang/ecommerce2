@@ -40,7 +40,7 @@
 </section>
 </template>
 <script setup>
-import { routerViewLocationKey } from 'vue-router';
+//import { routerViewLocationKey } from 'vue-router';
 
 import img1 from "../assets/images/shirt.png";
 import img2 from "../assets/images/shoes.png";

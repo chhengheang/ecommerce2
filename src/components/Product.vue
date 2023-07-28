@@ -68,7 +68,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 75px;
       border: 1px solid #000;
+    }
+    .left .product_img img{
+      width: 350px;
     }
 
     .left .h2 {

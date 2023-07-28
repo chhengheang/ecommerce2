@@ -41,7 +41,7 @@
       <hr>
       <div class="reserve">
         <img src="../assets/images/copyright.png">
-        <p> 2023 All right and reserved by WINDD</p>
+        <p> 2023 WINDD All Right Reserved</p>
       </div>
     </div>
     </section>

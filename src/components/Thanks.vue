@@ -41,7 +41,7 @@
     </div>
     <div class="right">
       <div class="summary">
-        <h2>Summery (1 item)</h2>
+        <h2>Summary (1 item)</h2>
         <div class="two-text">
           <p>Subtotal</p>
           <p>$60.00</p>
@@ -55,7 +55,7 @@
         </div>
       </div>
       <RouterLink to="/receipt"><button> View your receipt</button></RouterLink>
-        
+      <RouterLink to="/checkout"><button>Back</button></RouterLink>
     </div>
    </section>
   </template>

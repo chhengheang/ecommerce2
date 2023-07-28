@@ -136,17 +136,19 @@
 .left .complete{
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 .left .complete p{
     color: black;
     cursor: pointer;
-    font-size: 1.7rem;
+    font-size: 15px;
+    font-weight: bold;
 }
 .left .complete button{
     border: 1px solid #000;
-    padding: 5px 30px;
+    padding: 7px 35px;
     cursor: pointer ;
-    font-size: 1.7rem;
+    font-size: 15px;
     background-color: #A1B5C8;
 }
 
