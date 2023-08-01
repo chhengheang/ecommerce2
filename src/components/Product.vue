@@ -21,7 +21,7 @@
           <p>Quantity:</p>
           <input type="number">
         </div>
-        <RouterLink to="/cart"><button class="add_cart">Add To Cart</button></RouterLink>
+        <button class="add_cart" v-on:click="childMethod">Add To Cart</button>
         <div class="bot">
           <button>Sizing Chart</button>
         </div>
@@ -43,10 +43,12 @@
     </div>
   </section>
 </template>
-<script setup>
+<script>
 
 //const productImage = this.$route.param.imgLink;
 //const productName = this.$route.param.name;
+
+console.log(hello);
 
 </script>
 <style scoped>

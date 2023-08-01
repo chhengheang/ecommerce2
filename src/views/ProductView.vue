@@ -2,14 +2,22 @@
 <template>
   <div> 
    <Header/>
-   <Product/>
+   <Product hello/>
    <Footer/>
    
   </div>
  </template>
- <script setup>
+ <script >
    import Product from "../components/Product.vue";
    import Header from "../components/Header.vue";
-   import Footer from "../components/Footer.vue";''
+   import Footer from "../components/Footer.vue";
+
+   export default {
+  data:()=>{
+    return{
+      hello:"hello"
+    }
+  }
+}
  </script>
  

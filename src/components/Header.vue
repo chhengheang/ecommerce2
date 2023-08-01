@@ -9,10 +9,12 @@
 </div>
 
 <nav class="navbar">
-  <router-link to="/"> 
+<router-link to="/"> 
   <a href="#home">Home</a>
 </router-link>
-   <a href="#about">About</a>
+<router-link to="/about"> 
+  <a href="#about">About</a>
+</router-link> 
    <a href="#services">Services</a>
    <router-link to="/cart">
    <a href="#projects">
@@ -23,10 +25,15 @@
    <a class="btnn sign_up" href="#pricing">Sign Up</a>
    <a class="btnn login" href="#contact">Login</a>
 </nav>
+<div>
+    <child @clicked="onClickChild"></child>
+</div>
+
 
 </header>
 </template>
-<script setup>
+<script>
+
 
 </script>
 <style lang="scss">
