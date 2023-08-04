@@ -25,7 +25,7 @@
         </div>
         <hr>
         <div class="summary">
-        <h2>Summary (1 item)</h2>
+        <h2>Summary</h2>
         <div class="two-text">
           <p>Subtotal</p>
           <p>${{ getLastItem(sumPrice(global.cart)) }}.00</p>

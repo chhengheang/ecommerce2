@@ -12,7 +12,9 @@
               All with authenticity and class.
             </p>
             <a href="/" class="btn">shop now</a>
+            <RouterLink to="/about">
             <a href="/about" class="btn">learn more</a>
+            </RouterLink>
          </div>
          <div class="artwork">
             <img src="../assets/images/1.avif" alt="">
@@ -46,29 +48,30 @@ import img3 from "../assets/images/trousers.png";
 import img4 from "../assets/images/jacket.png";
 import img5 from "../assets/images/hawaiian-shirt.png";
 import img6 from "../assets/images/see_more.png";
+import { RouterLink } from "vue-router";
 
 
 export default{
-  data: ()=>{
-    return{
-      products : [
-      {
-        imgLink: img1, id: 1, price: 90, name: "SHIRT"
-      },{
-        imgLink: img2, id: 2, price: 120,name: "JEAN"
-      },{
-        imgLink: img3, id: 3, price: 59,name: "PANT"
-      },{
-        imgLink: img4, id: 4, price: 1900,name: "SWEATER"
-      },{
-        imgLink: img5, id: 5, price: 60,name: "JACKET"
-      },{
-        imgLink: img6, id: 6, price: 200,name: "SHOES"
-      }
-    ]
-    }
-  
-}
+    data: () => {
+        return {
+            products: [
+                {
+                    imgLink: img1, id: 1, price: 90, name: "SHIRT"
+                }, {
+                    imgLink: img2, id: 2, price: 120, name: "JEAN"
+                }, {
+                    imgLink: img3, id: 3, price: 59, name: "PANT"
+                }, {
+                    imgLink: img4, id: 4, price: 1900, name: "SWEATER"
+                }, {
+                    imgLink: img5, id: 5, price: 60, name: "JACKET"
+                }, {
+                    imgLink: img6, id: 6, price: 200, name: "SHOES"
+                }
+            ]
+        };
+    },
+    components: { RouterLink }
 }
 
 </script>
