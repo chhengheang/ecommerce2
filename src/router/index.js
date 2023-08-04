@@ -1,55 +1,49 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
-import ProductView from "../views/ProductView.vue";
-import CartView from "../views/CartView.vue";
-import CheckoutView from "../views/CheckoutView.vue"
-import ThanksView from "../views/ThanksView.vue"
-import ReceiptView from "../views/ReceiptView.vue"
-import AboutView from "../views/AboutView.vue"
+import Home from "../views/Banner.vue";
+import Product from "../views/Product.vue";
+import Cart from "../views/Cart.vue";
+import Checkout from "../views/Checkout.vue";
+import Thanks from "../views/Thanks.vue";
+import Receipt from "../views/Receipt.vue";
+import About from "../views/About.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
       name: "home",
-      component: HomeView,
+      component: Home,
     },
     {
       path: "/cart",
       name: "cart",
-      component: CartView,
+      component: Cart,
     },
     {
-      path: "/product",
+      path: "/product/:id",
       name: "product",
-      component: ProductView,
-    },
-    {
-      path: "/product/:id/:img",
-      name: "productView",
-      component: ProductView,
+      component: Product,
     },
     {
       path: "/checkout",
       name: "checkout",
-      component: CheckoutView,
+      component: Checkout,
     },
     {
       path: "/thanks",
       name: "thanks",
-      component: ThanksView,
+      component: Thanks,
     },
     {
       path: "/receipt",
       name: "receipt",
-      component: ReceiptView,
+      component: Receipt,
     },
     {
       path: "/about",
       name: "about",
-      component: AboutView,
+      component: About,
     },
-    
   ],
 });
 
