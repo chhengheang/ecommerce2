@@ -48,8 +48,6 @@
 //const productImage = this.$route.param.imgLink;
 //const productName = this.$route.param.name;
 
-console.log(hello);
-
 </script>
 <style scoped>
 .product {

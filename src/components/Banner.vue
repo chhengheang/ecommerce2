@@ -7,12 +7,14 @@
 
       <section class="swiper-slide slide">
          <div class="content">
-            <h3>Shopping Essential</h3>
+            <h3>Shopping Essentials</h3>
             <p>WINDD, a shopping platform where you can buy clothings, from footwears to jackets. Anything exists Here
-              All with authenticity and class.
+            , all with authenticity and class.
             </p>
             <a href="#about" class="btn">shop now</a>
+            <RouterLink to="/about">
             <a href="#about" class="btn">learn more</a>
+            </RouterLink>
          </div>
          <div class="artwork">
             <img src="../assets/images/1.avif" alt="">
@@ -48,6 +50,7 @@ import img3 from "../assets/images/trousers.png";
 import img4 from "../assets/images/jacket.png";
 import img5 from "../assets/images/hawaiian-shirt.png";
 import img6 from "../assets/images/see_more.png";
+import { RouterLink } from "vue-router";
 
     const products = [
       {
@@ -131,14 +134,15 @@ import img6 from "../assets/images/see_more.png";
     margin-right: 5px;
 }
 .btn:hover{
-    background-color: #888;
+  background: url(../assets/images/blue.png);
+  color: white;
 }
 .home {
   padding: 0;
 }
 
 .home .slide {
-  background-color: rgb(121, 47, 121);
+  background: url(../assets/images/blue.png);
   min-height: 60rem;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,9 +1,9 @@
 <template>
     <section class="about">
         <div class="top">
-            <h2>Landing Page Hero Heading</h2>
-            <p> PARAGRAPH PARAGRAPH PARAGRAPH PARAGRAPH PARAGRAPH PARAGRAPH PARAGRAPH </p>
-            <button class="contact">Contact Us</button>
+            <h2>FUTURE OF SHOPPING</h2>
+            <p>WINDD makes it easy for your next shopping-spree. Make your clotheset a Paris Fashion Show. </p>
+            <button class="contact">SHOP NOW</button>
         </div>
         <div class="comment">
             <div class="content">
@@ -11,7 +11,7 @@
                 <img src="../assets/images/user.png" alt="">
             </div>
             <div class="user-cmt">
-                <p>SPEEEEEEEEEEEEEEEEEECH</p>
+                <p>love shopping at WINDD. It is the best!</p>
                 <p>-Top G</p>
             </div>
             </div>
@@ -20,15 +20,15 @@
                 <img src="../assets/images/user.png" alt="">
             </div>
             <div class="user-cmt">
-                <p>SPEEEEEEEEEEEEEEEEEECH</p>
+                <p>Can't keep my money in my wallet, everything is just too cool not to buy.</p>
                 <p>-Top G</p>
             </div>
             </div>
         </div>
             <div class="feature">
             <div class="left">
-                <h2>Feature 1</h2>
-                <p>PARAGRAAAAAAAAAAAAAAAH</p>
+                <h2>Transparency </h2>
+                <p>From the core to the surface, everything is all about standard and quality.</p>
             </div>
             <div class="right">
                 <img src="../assets/images/creationofadam.jpg">
@@ -61,7 +61,7 @@
     border-radius: 5px;
 }
 .top button:hover{
-    background: var(--black);
+    background: url(../assets/images/green.jpg);
     color: var(--white);
 }
 .comment{
@@ -95,12 +95,18 @@
     background: url(../assets/images/green.jpg) no-repeat;
     background-size: cover;
 }
+.top h2{
+    font-size: 4rem;
+    font-style: italic;
+}
 .feature .left h2{
-    font-size: 2rem;
+    font-size: 4rem;
+    font-style: italic;
+    margin-bottom: 2rem;
 
 }
 .feature .left p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     
 }
 .feature .right img{
